@@ -30,6 +30,7 @@ Users can chat naturally through a simple web interface to get curated suggestio
 
 It’s a great starting point for understanding how to build **Conversational AI** systems that blend natural language understanding, backend logic, and a user-friendly frontend.
 
+We have this bot in two different languages i.e. English (en) and Bengali (bn). This README file is properly calibrated with 'en' version.
 ---
 
 ##  Architecture
@@ -51,31 +52,44 @@ It’s a great starting point for understanding how to build **Conversational AI
 ---
 
 ##  Folder Structure
+
 ```
-cinebot/
+CineBot/
 │
-├── rasa/
-│   ├── domain.yml
-│   ├── config.yml
-│   ├── data/
-│   │   ├── nlu.yml
-│   │   └── stories.yml
-│   ├── actions/
-│   │   └── actions.py
-│   ├── credentials.yml
-│   ├── endpoints.yml
-│   └── models/
+├── .rasa/                        
 │
-├── templates/
-│   └── index.html
+├── actions/                      
+│   ├── __pycache__/              
+│   ├── __init__.py               
+│   └── actions.py                # Contains custom logic for movie recommendations
 │
-├── static/
-│   └── (optional JS/CSS files)
+├── data/                         # Training data for Rasa NLU and stories
+│   ├── nlu.yml                   # Intent examples and entity definitions
+│   ├── rules.yml                 # Conversation rules
+│   └── stories.yml               # Story-based dialogue training data
 │
-├── app.py
-├── requirements.txt
-└── README.md
+├── models/                       # Trained Rasa model files
+│   ├── 20250227-065508-resultant-cevian.tar
+│   ├── 20250227-072139-dry-bocce.tar
+│   └── 20250227-075259-mute-actress.tar
+│
+├── static/                       
+│   └── index.html                # Main chatbot interface (UI)
+│  
+│
+├── tests/                        
+│   └── test_stories.yml          # Test stories for conversation flow validation
+│
+├── app.py                        # Flask app file integrating with Rasa REST API
+│
+├── config.yml                    # Rasa pipeline & policy configuration
+├── credentials.yml               # API connectors (e.g., REST channel)
+├── domain.yml                    # Intents, entities, slots, and responses
+├── endpoints.yml                 # Action and model server configuration
+│
+└── requirements.txt              # Python dependencies for project setup
 ```
+
 
 ---
 
