@@ -55,7 +55,7 @@ We have this bot in two different languages i.e. English (en) and Bengali (bn). 
 ##  Folder Structure
 
 ```
-CineBot/
+en_CineBot/
 │
 ├── .rasa/                        
 │
