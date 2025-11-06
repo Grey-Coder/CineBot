@@ -31,6 +31,7 @@ Users can chat naturally through a simple web interface to get curated suggestio
 It’s a great starting point for understanding how to build **Conversational AI** systems that blend natural language understanding, backend logic, and a user-friendly frontend.
 
 We have this bot in two different languages i.e. English (en) and Bengali (bn). This README file is properly calibrated with 'en' version.
+
 ---
 
 ##  Architecture
