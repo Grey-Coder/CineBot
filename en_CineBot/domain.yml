@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_recommendation
+  - provide_genre
+  - thanks
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm CineBot, your movie buddy. What type of movies are you in the mood for today? (e.g., Action, Comedy, Drama, Sci-Fi)"
+  utter_ask_genre:
+    - text: "Great! Which genre would you like to explore? (Action, Comedy, Drama, Sci-Fi)"
+  utter_fallback:
+    - text: "I didn't catch that. Could you please specify a movie genre?"
+  utter_thanks:
+    - text: "You're welcome! Enjoy your movie time!"
+  utter_goodbye:
+    - text: "Goodbye! Feel free to come back if you need more recommendations."
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_movie_recommendation
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

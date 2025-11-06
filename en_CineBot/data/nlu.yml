@@ -1,0 +1,106 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: ask_recommendation
+  examples: |
+    - Can you recommend a movie?
+    - I need a movie recommendation.
+    - Suggest a movie for me.
+    - What movie should I watch?
+    - What do you suggest I watch?
+    - Any movie recommendations?
+    - I'm looking for a movie suggestion.
+    - Give me a movie idea.
+    - What's a good movie to watch tonight?
+    - Could you suggest a film?
+    - I want to watch something; any recommendations?
+    - Which movie do you recommend?
+    - Do you have any movie suggestions?
+    - Can you pick a movie for me?
+    - I need some movie advice.
+    - What film would you recommend?
+    - Recommend a flick for me.
+    - Any ideas for a movie to watch?
+    - What should I see on screen tonight?
+
+
+- intent: provide_genre
+  examples: |
+    - I feel like watching an [action](genre) movie.
+    - How about a [comedy](genre)?
+    - I want something [dramatic](genre) or [drama](genre).
+    - [Sci-fi](genre) sounds interesting.
+    - I'd like to watch a [drama](genre).
+    - Do you have any [romance](genre) recommendations?
+    - I'm in the mood for a [thriller](genre).
+    - Suggest me a good [horror](genre) movie.
+    - What about a classic [action](genre) flick?
+    - I could go for a [comedy](genre) film right now.
+    - Any suggestions for a [fantasy](genre) movie?
+    - I'd love a [romantic comedy](genre) if you have one.
+    - Maybe an [animated](genre) movie would be fun.
+    - How about something [lighthearted](genre), like a comedy?
+    - I'm craving an intense [sci-fi](genre) experience.
+    - I want a [superhero](genre) film.
+    - Can you recommend a good [mystery](genre)?
+    - I feel like a good [historical drama](genre) tonight.
+    - Give me a [comedy](genre) that's really funny.
+    - I'm interested in a thought-provoking [drama](genre).
+
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+
+
+

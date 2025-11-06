@@ -1,0 +1,26 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_recommendation
+  - provide_genre
+  - thanks
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "হ্যালো! আমি সাইনেবট, আপনার সিনেমা সঙ্গী। আজ আপনি কী ধরণের সিনেমা দেখতে চান? (যেমন: অ্যাকশন, কমেডি, ড্রামা, সাই-ফাই)"
+  utter_ask_genre:
+    - text: "দারুণ! আপনি কোন ঘরানার সিনেমা পছন্দ করবেন? (অ্যাকশন, কমেডি, ড্রামা, সাই-ফাই)"
+  utter_fallback:
+    - text: "দুঃখিত, আমি বুঝতে পারছি না। অনুগ্রহ করে আবার বলুন।"
+  utter_thanks:
+    - text: "আপনাকে ধন্যবাদ! সিনেমা উপভোগ করুন!"
+  utter_goodbye:
+    - text: "বিদায়! আরও পরামর্শের জন্য আবার আসুন।"
+  utter_iamabot:
+  - text: "আমি একটি বট, Rasa দ্বারা চালিত।"
+
+
+actions:
+  - action_movie_recommendation

@@ -1,0 +1,17 @@
+version: "3.1"
+stories:
+- story: greeting and recommendation flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_recommendation
+  - action: utter_ask_genre
+  - intent: provide_genre
+  - action: action_movie_recommendation
+
+- story: thanks and goodbye
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye

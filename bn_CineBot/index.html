@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>সাইনেবট</title>
+</head>
+<body>
+  <h1>সাইনেবট</h1>
+  <input id="userMessage" type="text" placeholder="মেসেজ লিখুন" />
+  <button onclick="sendMessage()">পাঠান</button>
+  <div id="chatContainer" style="margin-top:20px;"></div>
+
+  <script>
+    async function sendMessage() {
+      const message = document.getElementById('userMessage').value;
+      const chatContainer = document.getElementById('chatContainer');
+      const response = await fetch('http://localhost:5005/webhooks/rest/webhook', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          sender: 'user123',
+          message: message
+        })
+      });
+      const data = await response.json();
+
+      chatContainer.innerHTML += `<p><strong>আপনি:</strong> ${message}</p>`;
+      data.forEach(msg => {
+        chatContainer.innerHTML += `<p><strong>বট:</strong> ${msg.text || ''}</p>`;
+      });
+      document.getElementById('userMessage').value = '';
+    }
+  </script>
+</body>
+</html>
