@@ -94,7 +94,7 @@ cinebot/
 
 ### **1️ Clone the Repository**
 ```bash
-git clone https://github.com/<your-username>/cinebot.git
+git clone https://github.com/Grey-Coder/cinebot.git
 cd cinebot
 ```
 
