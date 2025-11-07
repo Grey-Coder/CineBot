@@ -135,7 +135,7 @@ pip install rasa flask requests
 
 ### **Step 1: Start Rasa Server**
 ```bash
-cd rasa
+cd en_CineBot
 rasa run --enable-api --cors "*" --debug
 ```
 
@@ -149,6 +149,13 @@ In another terminal:
 ```bash
 python app.py
 ```
+
+### **Note: To Test CineBot is Working Properly (Without the Flask Interface)**
+In another terminal:
+```bash
+rasa shell
+```
+It will start running Rasa chatbot within the same terminal
 
 Now visit  [http://localhost:5000](http://localhost:5000) to start chatting with CineBot!
 
